@@ -136,7 +136,7 @@ function Show-Window
     $cancelButton.Text = 'Help'
     $cancelButton.DialogResult = [System.Windows.Forms.DialogResult]::Retry
     $form.CancelButton = $cancelButton
-    $form.Controls.Add($cancelButton)
+    #$form.Controls.Add($cancelButton)
 
     $skipButton = New-Object System.Windows.Forms.Button
     $skipHeight = $img.Size.Height + '55'
