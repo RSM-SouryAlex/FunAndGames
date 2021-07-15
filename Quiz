@@ -1895,6 +1895,9 @@ function displayPalette
     
     write-host
 }
+    Out-Speak -Phrase "Your score $Correct out of $($People.count). $percent percent" -Voice Zira
+    Out-Speak -Phrase "Excellent" -Voice Zira
+
 . main
 }
 elseif($percent -gt '90')
