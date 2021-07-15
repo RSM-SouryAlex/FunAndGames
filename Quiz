@@ -1524,16 +1524,16 @@ foreach ($person in $people)
     }
 }
 
-$percent = ("{0:P0}" -f($Correct/$People.Count))
+[int]$percent = ("{0:N0}" -f($Correct/$People.Count * '100'))
 
 if($percent -gt '90')
 {
-    Out-Speak -Phrase "Your score $Correct out of $($People.count). $percent" -Voice Zira
+    Out-Speak -Phrase "Your score $Correct out of $($People.count). $percent percent" -Voice Zira
     Out-Speak -Phrase "Good Job" -Voice Zira
 }
 else
 {
-    Out-Speak -Phrase "Your score $Correct out of $($People.Count). $percent" -Voice Zira
+    Out-Speak -Phrase "Your score $Correct out of $($People.Count). $percent percent" -Voice Zira
     Out-Speak -Phrase "Better luck next time" -Voice Zira
 }
 
