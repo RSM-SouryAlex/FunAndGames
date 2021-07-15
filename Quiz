@@ -1547,6 +1547,9 @@ foreach ($person in $people)
 
 if($percent -eq '100')
 {
+    Out-Speak -Phrase "Your score $Correct out of $($People.count). $percent percent" -Voice Zira
+    Out-Speak -Phrase "Excellent" -Voice Zira
+
 function main
 {
     write-debug "ENTER main"
@@ -1895,10 +1898,8 @@ function displayPalette
     
     write-host
 }
-    Out-Speak -Phrase "Your score $Correct out of $($People.count). $percent percent" -Voice Zira
-    Out-Speak -Phrase "Excellent" -Voice Zira
-
- main
+   
+ . main
 }
 elseif($percent -gt '90')
 {
