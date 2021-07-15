@@ -1498,9 +1498,11 @@ $URLs = @{
     'BucketHead' = 'https://kingidea.com/wp-content/uploads/2012/07/buckethead05252009-36.jpg'
 }
 
-
+[int]$Correct = '0'
+[int]$Incorrect = '0'
 
 $People = $Guitarists | Get-Random -Count 10
+$People.Count
 
 foreach ($person in $people)
 {
@@ -1511,7 +1513,27 @@ foreach ($person in $people)
         Invoke-WebRequest -Uri $URLs.$Person -OutFile $filepath
     }
 
-    Show-Window -filepath $filepath
+    $result = Show-Window -filepath $filepath
+    if($result -eq 'Correct')
+    {
+        $Correct++
+    }
+    if($result -eq 'Incorrect')
+    {
+        $Incorrect++
+    }
+}
 
+$percent = ("{0:P0}" -f($Correct/$People.Count))
+
+if($percent -gt '90')
+{
+    Out-Speak -Phrase "Your score $Correct out of $($People.count). $percent" -Voice Zira
+    Out-Speak -Phrase "Good Job" -Voice Zira
+}
+else
+{
+    Out-Speak -Phrase "Your score $Correct out of $($People.Count). $percent" -Voice Zira
+    Out-Speak -Phrase "Better luck next time" -Voice Zira
 }
 
