@@ -12,11 +12,11 @@ $Banner = @"
          \ \  \\\  \ \  \\\  \ \  \   /  / /                                             
           \ \  \\\  \ \  \\\  \ \  \ /  /_/__                                            
            \ \_____  \ \_______\ \__\\________\                                          
-            \|___| \__\|_______|\|__|\|_______|      A                                    
+            \|___| \__\|_______|\|__|\|_______|                                          
                   \|__|                                                                  
                                                                         
 "@
-Write-Host $Banner -ForegroundColor DarkYellow
+#Write-Host $Banner -ForegroundColor DarkYellow
 
 function Out-Speak
 {
@@ -185,28 +185,28 @@ function Show-Window
     $RadioButton1.Location = New-Object System.Drawing.Point(10,$textHeight)
     $RadioButton1.size = '100,30'
     $RadioButton1.Checked = $false 
-    $RadioButton1.Text = "$($Answer[0])"
+    $RadioButton1.Text = "$($Answers[0])"
     $form.Controls.Add($RadioButton1)
 
     $RadioButton2 = New-Object System.Windows.Forms.RadioButton
     $RadioButton2.Location = New-Object System.Drawing.Point(110,$textHeight)
     $RadioButton2.size = '100,30'
     $RadioButton2.Checked = $false 
-    $RadioButton2.Text = "$($Answer[1])"
+    $RadioButton2.Text = "$($Answers[1])"
     $form.Controls.Add($RadioButton2)
 
     $RadioButton3 = New-Object System.Windows.Forms.RadioButton
     $RadioButton3.Location = New-Object System.Drawing.Point(210,$textHeight)
     $RadioButton3.size = '100,30'
     $RadioButton3.Checked = $false 
-    $RadioButton3.Text = "$($Answer[2])"
+    $RadioButton3.Text = "$($Answers[2])"
     $form.Controls.Add($RadioButton3)
 
     $RadioButton4 = New-Object System.Windows.Forms.RadioButton
     $RadioButton4.Location = New-Object System.Drawing.Point(310,$textHeight)
     $RadioButton4.size = '100,30'
     $RadioButton4.Checked = $false 
-    $RadioButton4.Text = "$($Answer[3])"
+    $RadioButton4.Text = "$($Answers[3])"
     $form.Controls.Add($RadioButton4)
 
 
