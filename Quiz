@@ -166,19 +166,20 @@ function Show-Window
     $textBox.Size = New-Object System.Drawing.Size(260,20)
     #$form.Controls.Add($textBox)
 
-    $Answer = $Guitarists | Get-Random -Count 4
+    $Answers = $Guitarists | Get-Random -Count 4
     $C = 0,1,2,3 | Get-Random 
     $RAnswer = Get-ItemProperty -Path $filepath
-    $Answer[$C] = $RAnswer.BaseName
+    $RightAnswer = $RAnswer.BaseName
 
-    if($Answer -like $RAnswer.BaseName)
+    if($Answers -like $RightAnswer)
     {
-        $Answer = $Guitarists | Get-Random -Count 4
-        $C = 0,1,2,3 | Get-Random 
-        $RAnswer = Get-ItemProperty -Path $filepath
-        $Answer[$C] = $RAnswer.BaseName
+        $Answers = $Guitarists | Get-Random -Count 4
+        $Answers[$C] = $RightAnswer
     }
-
+    else
+    {
+        $Answers[$C] = $RightAnswer
+    }
 
     $RadioButton1 = New-Object System.Windows.Forms.RadioButton
     $RadioButton1.Location = New-Object System.Drawing.Point(10,$textHeight)
