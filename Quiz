@@ -169,13 +169,16 @@ function Show-Window
     $Answer = $Guitarists | Get-Random -Count 4
     $C = 0,1,2,3 | Get-Random 
     $RAnswer = Get-ItemProperty -Path $filepath
-    
+    $Answer[$C] = $RAnswer.BaseName
+
     if($Answer -like $RAnswer.BaseName)
     {
         $Answer = $Guitarists | Get-Random -Count 4
+        $C = 0,1,2,3 | Get-Random 
+        $RAnswer = Get-ItemProperty -Path $filepath
+        $Answer[$C] = $RAnswer.BaseName
     }
 
-    $Answer[$C] = $RAnswer.BaseName
 
     $RadioButton1 = New-Object System.Windows.Forms.RadioButton
     $RadioButton1.Location = New-Object System.Drawing.Point(10,$textHeight)
