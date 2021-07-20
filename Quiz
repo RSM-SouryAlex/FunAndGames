@@ -102,7 +102,11 @@ $Guitarists = 'Joe Satriani',`
               'BucketHead',`
               'George Lynch',`
               'Marty Friedman',`
-              'Zakk Wylde'
+              'Zakk Wylde',`
+              'Steve Vai',`
+              'Yngwie Malmsteen',`
+              'Daron Malakian',`
+              'Daron Malakian'
 
 
 
@@ -1592,8 +1596,159 @@ function Show-Window
                 }
             }
         }
+        if($filepath -like '*Steve Vai*')
+        {
+            if($RadioButton1.Checked -and ($RadioButton1.Text -eq 'Steve Vai'))
+            {
+                Write-Output 'Correct'
+                Out-Speak 'Correct'
+            }
+            else
+            {
+                 if($RadioButton2.Checked -and ($RadioButton2.Text -eq 'Steve Vai'))
+                {
+                    Write-Output 'Correct'
+                    Out-Speak 'Correct'
+                }
+                else
+                {
+                     if($RadioButton3.Checked -and ($RadioButton3.Text -eq 'Steve Vai'))
+                    {
+                        Write-Output 'Correct'
+                        Out-Speak 'Correct'
+                    }
+                    else
+                    {
+                         if($RadioButton4.Checked -and ($RadioButton4.Text -eq 'Steve Vai'))
+                        {
+                            Write-Output 'Correct'
+                            Out-Speak 'Correct'
+                        }
+                        else
+                        {
+                            Write-Output 'Incorrect'
+                            Out-Speak 'That is incorrect'
+                        }
+                    }
+                }
+            }
+        }
+        if($filepath -like '*Yngwie Malmsteen*')
+        {
+            if($RadioButton1.Checked -and ($RadioButton1.Text -eq 'Yngwie Malmsteen'))
+            {
+                Write-Output 'Correct'
+                Out-Speak 'Correct'
+            }
+            else
+            {
+                 if($RadioButton2.Checked -and ($RadioButton2.Text -eq 'Yngwie Malmsteen'))
+                {
+                    Write-Output 'Correct'
+                    Out-Speak 'Correct'
+                }
+                else
+                {
+                     if($RadioButton3.Checked -and ($RadioButton3.Text -eq 'Yngwie Malmsteen'))
+                    {
+                        Write-Output 'Correct'
+                        Out-Speak 'Correct'
+                    }
+                    else
+                    {
+                         if($RadioButton4.Checked -and ($RadioButton4.Text -eq 'Yngwie Malmsteen'))
+                        {
+                            Write-Output 'Correct'
+                            Out-Speak 'Correct'
+                        }
+                        else
+                        {
+                            Write-Output 'Incorrect'
+                            Out-Speak 'That is incorrect'
+                        }
+                    }
+                }
+            }
+        }
+        if($filepath -like '*Daron Malakian*')
+        {
+            if($RadioButton1.Checked -and ($RadioButton1.Text -eq 'Daron Malakian'))
+            {
+                Write-Output 'Correct'
+                Out-Speak 'Correct'
+            }
+            else
+            {
+                 if($RadioButton2.Checked -and ($RadioButton2.Text -eq 'Daron Malakian'))
+                {
+                    Write-Output 'Correct'
+                    Out-Speak 'Correct'
+                }
+                else
+                {
+                     if($RadioButton3.Checked -and ($RadioButton3.Text -eq 'Daron Malakian'))
+                    {
+                        Write-Output 'Correct'
+                        Out-Speak 'Correct'
+                    }
+                    else
+                    {
+                         if($RadioButton4.Checked -and ($RadioButton4.Text -eq 'Daron Malakian'))
+                        {
+                            Write-Output 'Correct'
+                            Out-Speak 'Correct'
+                        }
+                        else
+                        {
+                            Write-Output 'Incorrect'
+                            Out-Speak 'That is incorrect'
+                        }
+                    }
+                }
+            }
+        }
+        if($filepath -like '*Daron Malakian*')
+        {
+            if($RadioButton1.Checked -and ($RadioButton1.Text -eq 'Daron Malakian'))
+            {
+                Write-Output 'Correct'
+                Out-Speak 'Correct'
+            }
+            else
+            {
+                 if($RadioButton2.Checked -and ($RadioButton2.Text -eq 'Daron Malakian'))
+                {
+                    Write-Output 'Correct'
+                    Out-Speak 'Correct'
+                }
+                else
+                {
+                     if($RadioButton3.Checked -and ($RadioButton3.Text -eq 'Daron Malakian'))
+                    {
+                        Write-Output 'Correct'
+                        Out-Speak 'Correct'
+                    }
+                    else
+                    {
+                         if($RadioButton4.Checked -and ($RadioButton4.Text -eq 'Daron Malakian'))
+                        {
+                            Write-Output 'Correct'
+                            Out-Speak 'Correct'
+                        }
+                        else
+                        {
+                            Write-Output 'Incorrect'
+                            Out-Speak 'That is incorrect'
+                        }
+                    }
+                }
+            }
+        }
 
 
+
+
+}
 
 
     }
@@ -1648,6 +1803,10 @@ $URLs = @{
     'George Lynch' = 'https://i.pinimg.com/originals/2e/55/a7/2e55a7bbe02ba95c56ac714902f739e8.jpg'
     'Marty Friedman' = 'https://th.bing.com/th/id/OIP.KeUyVD3pQc-w3IVyfz_wvwHaHa?pid=ImgDet&rs=1'
     'Zakk Wylde' = 'https://i.pinimg.com/originals/a0/38/84/a038840899f0099a5d5b20a69e7927a5.jpg'
+    'Steve Vai' = 'https://i.pinimg.com/originals/df/23/16/df2316cefdde89b444f796adc01a8e35.jpg'
+    'Yngwie Malmsteen' = 'https://i.pinimg.com/originals/14/fc/9e/14fc9e71490dcb65e4481d287fc2bdf5.jpg'
+    'Stevie Ray Vaughn' = 'https://i.pinimg.com/736x/d6/75/b2/d675b29c3253ba95db5e0f3a7765d97a--srv-guitar-texas-flood.jpg'
+    'Daron Malakian' = 'https://www.ultimate-guitar.com/static/article/news/9/78019_0_meta_ver1533717663.jpg'
 }
 
 [int]$Correct = '0'
