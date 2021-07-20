@@ -97,7 +97,10 @@ $Guitarists = 'Joe Satriani',`
               'Jimmy Page',`
               'Joe Perry',`
               'Lita Ford',`
-              'BucketHead'
+              'BucketHead',`
+              'George Lynch',`
+              'Marty Firedman',`
+              'Zakk Wylde'
 
 
 
@@ -1476,6 +1479,119 @@ function Show-Window
                 }
             }
         }
+        if($filepath -like '*George Lynch*')
+        {
+            if($RadioButton1.Checked -and ($RadioButton1.Text -eq 'George Lynch'))
+            {
+                Write-Output 'Correct'
+                Out-Speak 'Correct'
+            }
+            else
+            {
+                 if($RadioButton2.Checked -and ($RadioButton2.Text -eq 'George Lynch'))
+                {
+                    Write-Output 'Correct'
+                    Out-Speak 'Correct'
+                }
+                else
+                {
+                     if($RadioButton3.Checked -and ($RadioButton3.Text -eq 'George Lynch'))
+                    {
+                        Write-Output 'Correct'
+                        Out-Speak 'Correct'
+                    }
+                    else
+                    {
+                         if($RadioButton4.Checked -and ($RadioButton4.Text -eq 'George Lynch'))
+                        {
+                            Write-Output 'Correct'
+                            Out-Speak 'Correct'
+                        }
+                        else
+                        {
+                            Write-Output 'Incorrect'
+                            Out-Speak 'That is incorrect'
+                        }
+                    }
+                }
+            }
+        }
+        if($filepath -like '*Marty Friedman*')
+        {
+            if($RadioButton1.Checked -and ($RadioButton1.Text -eq 'Marty Friedman'))
+            {
+                Write-Output 'Correct'
+                Out-Speak 'Correct'
+            }
+            else
+            {
+                 if($RadioButton2.Checked -and ($RadioButton2.Text -eq 'Marty Friedman'))
+                {
+                    Write-Output 'Correct'
+                    Out-Speak 'Correct'
+                }
+                else
+                {
+                     if($RadioButton3.Checked -and ($RadioButton3.Text -eq 'Marty Friedman'))
+                    {
+                        Write-Output 'Correct'
+                        Out-Speak 'Correct'
+                    }
+                    else
+                    {
+                         if($RadioButton4.Checked -and ($RadioButton4.Text -eq 'Marty Friedman'))
+                        {
+                            Write-Output 'Correct'
+                            Out-Speak 'Correct'
+                        }
+                        else
+                        {
+                            Write-Output 'Incorrect'
+                            Out-Speak 'That is incorrect'
+                        }
+                    }
+                }
+            }
+        }
+        if($filepath -like '*Zakk Wylde*')
+        {
+            if($RadioButton1.Checked -and ($RadioButton1.Text -eq 'Zakk Wylde'))
+            {
+                Write-Output 'Correct'
+                Out-Speak 'Correct'
+            }
+            else
+            {
+                 if($RadioButton2.Checked -and ($RadioButton2.Text -eq 'Zakk Wylde'))
+                {
+                    Write-Output 'Correct'
+                    Out-Speak 'Correct'
+                }
+                else
+                {
+                     if($RadioButton3.Checked -and ($RadioButton3.Text -eq 'Zakk Wylde'))
+                    {
+                        Write-Output 'Correct'
+                        Out-Speak 'Correct'
+                    }
+                    else
+                    {
+                         if($RadioButton4.Checked -and ($RadioButton4.Text -eq 'Zakk Wylde'))
+                        {
+                            Write-Output 'Correct'
+                            Out-Speak 'Correct'
+                        }
+                        else
+                        {
+                            Write-Output 'Incorrect'
+                            Out-Speak 'That is incorrect'
+                        }
+                    }
+                }
+            }
+        }
+
+
 
 
     }
@@ -1527,6 +1643,9 @@ $URLs = @{
     'Joe Perry' = 'https://i.insider.com/5bad1eda304c38850f8b456d?width=600&format=jpeg&auto=webp'
     'Lita Ford' = 'https://th.bing.com/th/id/R.059095439c2c184744b598f289c42d7f?rik=nMi5hRH2RsPPSA&riu=http%3a%2f%2f40.media.tumblr.com%2fea6906a46bd51d2be875331387ccabb3%2ftumblr_n9fpn7Thhg1rrne0fo1_1280.jpg&ehk=vZCL8pIFLc81d3D0WPoliJF6JsK%2fiAxVNNWXumRanaw%3d&risl=&pid=ImgRaw'
     'BucketHead' = 'https://kingidea.com/wp-content/uploads/2012/07/buckethead05252009-36.jpg'
+    'George Lynch' = 'https://i.pinimg.com/originals/2e/55/a7/2e55a7bbe02ba95c56ac714902f739e8.jpg'
+    'Marty Friedman' = 'https://th.bing.com/th/id/OIP.KeUyVD3pQc-w3IVyfz_wvwHaHa?pid=ImgDet&rs=1'
+    'Zakk Wylde' = 'https://i.pinimg.com/originals/a0/38/84/a038840899f0099a5d5b20a69e7927a5.jpg'
 }
 
 [int]$Correct = '0'
