@@ -1745,12 +1745,6 @@ function Show-Window
             }
         }
 
-
-
-
-}
-
-
     }
 
     if ($result -eq [System.Windows.Forms.DialogResult]::Retry)
