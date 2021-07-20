@@ -19,6 +19,8 @@ $Banner = @"
 "@
 #Write-Host $Banner -ForegroundColor DarkYellow
 
+[int]$Count = '20'
+
 function Out-Speak
 {
     [CmdletBinding()]
@@ -1651,7 +1653,7 @@ $URLs = @{
 [int]$Correct = '0'
 [int]$Incorrect = '0'
 
-$People = $Guitarists | Get-Random -Count 15
+$People = $Guitarists | Get-Random -Count $Count
 
 foreach ($person in $people)
 {
