@@ -1651,7 +1651,7 @@ $URLs = @{
 [int]$Correct = '0'
 [int]$Incorrect = '0'
 
-$People = $Guitarists | Get-Random -Count 10
+$People = $Guitarists | Get-Random -Count 15
 
 foreach ($person in $people)
 {
