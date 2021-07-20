@@ -1745,7 +1745,7 @@ function Show-Window
             }
         }
 
-    }
+    }#EndIf
 
     if ($result -eq [System.Windows.Forms.DialogResult]::Retry)
     {
@@ -1757,7 +1757,7 @@ function Show-Window
         $filepath
     }
     
-}
+}#EndFunction
 
 $URLs = @{
     'Joe Satriani' = 'https://th.bing.com/th/id/R.2414767b79fc58a84799f2368b93ad77?rik=L9cN%2bjLZAjQ%2b0Q&riu=http%3a%2f%2fcdn.mos.musicradar.com%2fimages%2ffeatures%2fsatriani-reader-questions%2fjoe-satriani-smiling-performing-in-bombay-corbis-460-100-460-70.jpg&ehk=KtQEp59v5Tubz4nyGdaS9I5nnyLm%2bzcGvw8soBPRP3Q%3d&risl=&pid=ImgRaw'
@@ -2204,4 +2204,3 @@ elseif($percent -le '49')
 }
 
 
-#end
