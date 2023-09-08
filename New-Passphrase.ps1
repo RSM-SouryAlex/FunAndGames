@@ -37,7 +37,7 @@ function New-Passphrase
     Write-Output $Password  
 }
 
-New-Passphrase -Json $Wordlist -Count 5
+New-Passphrase -Json $Wordlist -Count 4
 
 New-Passphrase -Json "C:\Users\e060080\desktop\UrbanWordList.json" -Count 3
 
